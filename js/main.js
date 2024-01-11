@@ -58,7 +58,7 @@ function daysFromBirth(i) {
 function amountOfMilk(i) {
     if (!document.querySelector(`.date-group-${i + 1}`).value) return 0
 
-    const daysFromBirth = gPanel[i].daysFromBirth
+    const daysFromBirth = daysFromBirth(i)
     var amountOfMilk = gPanel[i].amount
 
     if (daysFromBirth > 14) amountOfMilk = 2.5
