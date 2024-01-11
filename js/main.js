@@ -70,8 +70,8 @@ function amountOfMilk(i) {
     else if (daysFromBirth > 66) amountOfMilk = 0
     else amountOfMilk = 2
 
-    gPanel[i].amount = amountOfMilk
-    const elAmount = document.querySelector(`.amount-group-${i + 1}`)
+    gPanel[i].amount = amountOfMilk //model
+    const elAmount = document.querySelector(`.amount-group-${i + 1}`) ///dom
     elAmount.innerHTML = amountOfMilk
 
     return amountOfMilk
